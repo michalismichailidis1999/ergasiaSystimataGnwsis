@@ -1,0 +1,212 @@
+; Fri Nov 12 16:39:24 EET 2021
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_explosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot contains_toxic_element
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot symbolism
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot distinguished_by
+		(type SYMBOL)
+		(allowed-values S O H Cl C Na Rb Al)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot danger_smell
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot substance_ID
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_corrosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot is_radioactive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot specific_gravity
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot causes_burn_skin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot soluble_in_water
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Chemicals
+	(is-a USER)
+	(role abstract)
+	(single-slot distinguished_by
+		(type SYMBOL)
+		(allowed-values S O H Cl C Na Rb Al)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot specific_gravity
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_radioactive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot symbolism
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot soluble_in_water
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot danger_smell
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot substance_ID
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Oil
+	(is-a Chemicals)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 6.0 7.99)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_explosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot contains_toxic_element
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Acid
+	(is-a Chemicals)
+	(role abstract)
+	(single-slot causes_burn_skin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot soluble_in_water
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot is_corrosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass WeakAcid
+	(is-a Acid)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 3.0 5.99)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass StrongAcid
+	(is-a Acid)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 2.99)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Base
+	(is-a Chemicals)
+	(role abstract)
+	(single-slot soluble_in_water
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot is_corrosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass StrongBase
+	(is-a Base)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 11.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass WeakBase
+	(is-a Base)
+	(role concrete))

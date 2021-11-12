@@ -1,0 +1,104 @@
+; Fri Nov 12 16:39:24 EET 2021
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Ergasia_Class32] of  StrongAcid
+
+	(causes_burn_skin TRUE)
+	(distinguished_by S)
+	(is_corrosive TRUE)
+	(name "Sulphuric acid")
+	(pH 0.5)
+	(soluble_in_water TRUE)
+	(specific_gravity 1.84)
+	(substance_ID 1)
+	(symbolism "H2SO4"))
+
+([Ergasia_Class34] of  StrongAcid
+
+	(causes_burn_skin TRUE)
+	(danger_smell TRUE)
+	(is_corrosive TRUE)
+	(is_radioactive FALSE)
+	(name "Hydrochloric acid")
+	(pH 1.5)
+	(soluble_in_water TRUE)
+	(specific_gravity 1.19)
+	(substance_ID 2)
+	(symbolism "HCl"))
+
+([Ergasia_Class35] of  WeakAcid
+
+	(name "Acetic acid")
+	(pH 4.76)
+	(specific_gravity 1.014)
+	(substance_ID 3)
+	(symbolism "CH3COOH"))
+
+([Ergasia_Class36] of  WeakAcid
+
+	(distinguished_by C)
+	(name "Carbonic acid")
+	(pH 4.18)
+	(soluble_in_water TRUE)
+	(specific_gravity 1.0)
+	(substance_ID 4)
+	(symbolism "H2CO3"))
+
+([Ergasia_Class39] of  StrongBase
+
+	(is_corrosive TRUE)
+	(name "Sodium hydroxide")
+	(pH 12.0)
+	(soluble_in_water TRUE)
+	(specific_gravity 1.52)
+	(substance_ID 5)
+	(symbolism "NaOH"))
+
+([Ergasia_Class40] of  WeakBase
+
+	(color "red")
+	(name "Chromogen 23")
+	(pH 11.0)
+	(soluble_in_water TRUE)
+	(specific_gravity 1.0)
+	(substance_ID 6))
+
+([Ergasia_Class41] of  WeakBase
+
+	(color "white")
+	(is_corrosive TRUE)
+	(name "Aluminium hydroxide")
+	(pH 11.0)
+	(soluble_in_water TRUE)
+	(specific_gravity 2.4)
+	(substance_ID 7)
+	(symbolism "Al(OH)3"))
+
+([Ergasia_Class42] of  WeakBase
+
+	(is_radioactive TRUE)
+	(name "Rubidium hydroxide")
+	(pH 12.2)
+	(soluble_in_water TRUE)
+	(specific_gravity 2.4)
+	(substance_ID 8)
+	(symbolism "RbOH"))
+
+([Ergasia_Class43] of  Oil
+
+	(contains_toxic_element TRUE)
+	(is_explosive TRUE)
+	(is_radioactive FALSE)
+	(name "Petrol")
+	(pH 6.2)
+	(specific_gravity 0.74)
+	(substance_ID 9))
+
+([Ergasia_Class44] of  Oil
+
+	(name "Transformer oil")
+	(pH 6.0)
+	(specific_gravity 0.89)
+	(substance_ID 10))
