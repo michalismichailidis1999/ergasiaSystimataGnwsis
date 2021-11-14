@@ -1,4 +1,4 @@
-; Fri Nov 12 16:39:24 EET 2021
+; Sun Nov 14 16:01:40 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,46 +7,35 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot pH
+	(single-slot specific_gravity
 		(type FLOAT)
-		(range 0.0 14.0)
+		(range 0.0 %3FVARIABLE)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot is_explosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot contains_toxic_element
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot symbolism
-		(type STRING)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot color
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot distinguished_by
-		(type SYMBOL)
-		(allowed-values S O H Cl C Na Rb Al)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot danger_smell
+	(single-slot soluble_in_water
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot substance_ID
 		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot inverse_of_leads-to
+		(type INSTANCE)
+;+		(allowed-classes Manhole)
+		(create-accessor read-write))
+	(single-slot distinguished_by
+		(type SYMBOL)
+		(allowed-values S O H Cl C Na Rb Al)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot storage-name
+		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot is_corrosive
@@ -54,59 +43,68 @@
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot is_explosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot manhole-name
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot connected-to
+		(type INSTANCE)
+;+		(allowed-classes Manhole)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot contains
+		(type INSTANCE)
+;+		(allowed-classes Chemicals)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot is_radioactive
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot specific_gravity
-		(type FLOAT)
-		(range 0.0 %3FVARIABLE)
-;+		(cardinality 1 1)
+	(multislot connected-with
+		(type INSTANCE)
+;+		(allowed-classes Manhole Storage)
 		(create-accessor read-write))
 	(single-slot causes_burn_skin
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot soluble_in_water
+	(single-slot danger_smell
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass Chemicals
-	(is-a USER)
-	(role abstract)
-	(single-slot distinguished_by
-		(type SYMBOL)
-		(allowed-values S O H Cl C Na Rb Al)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot specific_gravity
-		(type FLOAT)
-		(range 0.0 %3FVARIABLE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot pH
-		(type FLOAT)
-		(range 0.0 14.0)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot is_radioactive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot symbolism
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot soluble_in_water
+	(single-slot contains_toxic_element
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Chemicals
+	(is-a USER)
+	(role abstract)
+	(single-slot is_radioactive
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
@@ -120,18 +118,46 @@
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot symbolism
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot specific_gravity
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot soluble_in_water
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot distinguished_by
+		(type SYMBOL)
+		(allowed-values S O H Cl C Na Rb Al)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot substance_ID
 		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 14.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Oil
 	(is-a Chemicals)
 	(role concrete)
-	(single-slot pH
-		(type FLOAT)
-		(range 6.0 7.99)
-;+		(cardinality 1 1)
+	(single-slot contains_toxic_element
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot is_explosive
 		(type SYMBOL)
@@ -139,15 +165,20 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot contains_toxic_element
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+	(single-slot pH
+		(type FLOAT)
+		(range 6.0 7.99)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Acid
 	(is-a Chemicals)
 	(role abstract)
+	(single-slot is_corrosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot causes_burn_skin
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
@@ -157,11 +188,6 @@
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot is_corrosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -186,15 +212,15 @@
 (defclass Base
 	(is-a Chemicals)
 	(role abstract)
+	(single-slot is_corrosive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot soluble_in_water
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot is_corrosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -210,3 +236,33 @@
 (defclass WeakBase
 	(is-a Base)
 	(role concrete))
+
+(defclass Storage
+	(is-a USER)
+	(role concrete)
+	(single-slot connected-to
+		(type INSTANCE)
+;+		(allowed-classes Manhole)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot contains
+		(type INSTANCE)
+;+		(allowed-classes Chemicals)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot storage-name
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Manhole
+	(is-a USER)
+	(role concrete)
+	(single-slot manhole-name
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot connected-with
+		(type INSTANCE)
+;+		(allowed-classes Manhole Storage)
+		(create-accessor read-write)))
