@@ -1,4 +1,4 @@
-; Sun Nov 14 16:01:40 EET 2021
+; Sun Nov 14 16:50:38 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,6 +7,10 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(multislot inverse_of_connected-to
+		(type INSTANCE)
+;+		(allowed-classes Storage)
+		(create-accessor read-write))
 	(single-slot specific_gravity
 		(type FLOAT)
 		(range 0.0 %3FVARIABLE)
@@ -49,6 +53,10 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot leads-to
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot manhole-name
 		(type STRING)
 ;+		(cardinality 1 1)
@@ -57,6 +65,12 @@
 		(type INSTANCE)
 ;+		(allowed-classes Manhole)
 ;+		(cardinality 1 1)
+;+		(inverse-slot connected-to)
+		(create-accessor read-write))
+	(multislot inverse_of_inverse_of_connected-to_
+		(type INSTANCE)
+;+		(allowed-classes Manhole)
+;+		(inverse-slot inverse_of_connected-to_)
 		(create-accessor read-write))
 	(multislot contains
 		(type INSTANCE)
@@ -72,9 +86,15 @@
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot inverse_of_connected-to_
+		(type INSTANCE)
+;+		(allowed-classes Storage)
+;+		(inverse-slot inverse_of_inverse_of_connected-to_)
+		(create-accessor read-write))
 	(multislot connected-with
 		(type INSTANCE)
 ;+		(allowed-classes Manhole Storage)
+;+		(inverse-slot connected-with)
 		(create-accessor read-write))
 	(single-slot causes_burn_skin
 		(type SYMBOL)
@@ -98,6 +118,11 @@
 	(single-slot pH
 		(type FLOAT)
 		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot connected-to-manhole
+		(type INSTANCE)
+;+		(allowed-classes Manhole)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -141,13 +166,13 @@
 		(allowed-values S O H Cl C Na Rb Al)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot substance_ID
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot pH
 		(type FLOAT)
 		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot substance_ID
+		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -240,11 +265,6 @@
 (defclass Storage
 	(is-a USER)
 	(role concrete)
-	(single-slot connected-to
-		(type INSTANCE)
-;+		(allowed-classes Manhole)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot contains
 		(type INSTANCE)
 ;+		(allowed-classes Chemicals)
@@ -252,6 +272,11 @@
 		(create-accessor read-write))
 	(single-slot storage-name
 		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot connected-to-manhole
+		(type INSTANCE)
+;+		(allowed-classes Manhole)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 

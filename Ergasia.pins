@@ -1,7 +1,62 @@
-; Sun Nov 14 16:01:40 EET 2021
+; Sun Nov 14 16:50:38 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
+
+([Ergasia_Class1] of  Manhole
+
+	(connected-with
+		[Ergasia_Class9]
+		[Ergasia_Class19])
+	(manhole-name "manhole-1"))
+
+([Ergasia_Class10] of  Manhole
+
+	(connected-with
+		[Ergasia_Class4]
+		[Ergasia_Class5]
+		[Ergasia_Class12])
+	(manhole-name "manhole-10"))
+
+([Ergasia_Class11] of  Manhole
+
+	(connected-with
+		[Ergasia_Class6]
+		[Ergasia_Class7]
+		[Ergasia_Class13])
+	(manhole-name "manhole-11"))
+
+([Ergasia_Class12] of  Manhole
+
+	(connected-with
+		[Ergasia_Class10]
+		[Ergasia_Class9])
+	(manhole-name "manhole-12"))
+
+([Ergasia_Class13] of  Manhole
+
+	(connected-with
+		[Ergasia_Class8]
+		[Ergasia_Class11])
+	(manhole-name "manhole-13"))
+
+([Ergasia_Class19] of  Storage
+
+	(connected-to-manhole [Ergasia_Class1])
+	(contains
+		[Ergasia_Class43]
+		[Ergasia_Class32])
+	(storage-name "store-1"))
+
+([Ergasia_Class2] of  Manhole
+
+	(connected-with [Ergasia_Class9])
+	(manhole-name "manhole-2"))
+
+([Ergasia_Class3] of  Manhole
+
+	(connected-with [Ergasia_Class9])
+	(manhole-name "manhole-3"))
 
 ([Ergasia_Class32] of  StrongAcid
 
@@ -56,6 +111,11 @@
 	(substance_ID 5)
 	(symbolism "NaOH"))
 
+([Ergasia_Class4] of  Manhole
+
+	(connected-with [Ergasia_Class10])
+	(manhole-name "manhole-4"))
+
 ([Ergasia_Class40] of  WeakBase
 
 	(color "red")
@@ -102,3 +162,32 @@
 	(pH 6.0)
 	(specific_gravity 0.89)
 	(substance_ID 10))
+
+([Ergasia_Class5] of  Manhole
+
+	(connected-with [Ergasia_Class10])
+	(manhole-name "manhole-5"))
+
+([Ergasia_Class6] of  Manhole
+
+	(connected-with [Ergasia_Class11])
+	(manhole-name "manhole-6"))
+
+([Ergasia_Class7] of  Manhole
+
+	(connected-with [Ergasia_Class11])
+	(manhole-name "manhole-7"))
+
+([Ergasia_Class8] of  Manhole
+
+	(connected-with [Ergasia_Class13])
+	(manhole-name "manhole-8"))
+
+([Ergasia_Class9] of  Manhole
+
+	(connected-with
+		[Ergasia_Class2]
+		[Ergasia_Class3]
+		[Ergasia_Class12]
+		[Ergasia_Class1])
+	(manhole-name "manhole-9"))

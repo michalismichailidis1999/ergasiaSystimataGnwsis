@@ -1,4 +1,4 @@
-; Sun Nov 14 16:01:40 EET 2021
+; Sun Nov 14 16:50:38 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,10 +20,10 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Ergasia_ProjectKB_Class75]
-		[Ergasia_ProjectKB_Class76]
-		[Ergasia_ProjectKB_Class77]
-		[Ergasia_ProjectKB_Class78]))
+		[Ergasia_ProjectKB_Class88]
+		[Ergasia_ProjectKB_Class89]
+		[Ergasia_ProjectKB_Class90]
+		[Ergasia_ProjectKB_Class91]))
 
 ([CLSES_TAB] of  Widget
 
@@ -757,34 +757,34 @@
 ([Ergasia_ProjectKB_Class74] of  Property_List
 )
 
-([Ergasia_ProjectKB_Class75] of  String
+([Ergasia_ProjectKB_Class8] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class88] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([Ergasia_ProjectKB_Class76] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([Ergasia_ProjectKB_Class77] of  String
+([Ergasia_ProjectKB_Class89] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
-
-([Ergasia_ProjectKB_Class78] of  String
-
-	(name "StrongAcid")
-	(string_value "name"))
-
-([Ergasia_ProjectKB_Class8] of  Property_List
-)
 
 ([Ergasia_ProjectKB_Class9] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class10])
 	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([Ergasia_ProjectKB_Class90] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([Ergasia_ProjectKB_Class91] of  String
+
+	(name "StrongAcid")
+	(string_value "name"))
 
 ([FORMS_TAB] of  Widget
 
@@ -913,7 +913,7 @@
 	(name "classes_file_name")
 	(string_value "Ergasia.pont"))
 
-([KB_519163_Class0] of  Map
+([KB_692593_Class0] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -999,8 +999,8 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_FACET_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[Ergasia_ProjectKB_Class10132]
 		[STANDARD_CLASS_FORM_WIDGET]
