@@ -1,193 +1,330 @@
-; Sun Nov 14 16:50:38 EET 2021
+; Wed Nov 17 16:23:44 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
 
-([Ergasia_Class1] of  Manhole
+([Ergasia_Class10003] of  Store
 
-	(connected-with
-		[Ergasia_Class9]
-		[Ergasia_Class19])
-	(manhole-name "manhole-1"))
+	(chemical
+		[Ergasia_Class32]
+		[Ergasia_Class43])
+	(connected_with [Ergasia_Class10015])
+	(name "Storage_1")
+	(store_ID "1"))
 
-([Ergasia_Class10] of  Manhole
+([Ergasia_Class10004] of  Store
 
-	(connected-with
-		[Ergasia_Class4]
-		[Ergasia_Class5]
-		[Ergasia_Class12])
-	(manhole-name "manhole-10"))
+	(chemical
+		[Ergasia_Class34]
+		[Ergasia_Class35])
+	(connected_with [Ergasia_Class10016])
+	(name "Storage_2")
+	(store_ID "2"))
 
-([Ergasia_Class11] of  Manhole
+([Ergasia_Class10005] of  Store
 
-	(connected-with
-		[Ergasia_Class6]
-		[Ergasia_Class7]
-		[Ergasia_Class13])
-	(manhole-name "manhole-11"))
+	(chemical
+		[Ergasia_Class42]
+		[Ergasia_Class44])
+	(connected_with [Ergasia_Class10017])
+	(name "Storage_3")
+	(store_ID "3"))
 
-([Ergasia_Class12] of  Manhole
+([Ergasia_Class10006] of  Store
 
-	(connected-with
-		[Ergasia_Class10]
-		[Ergasia_Class9])
-	(manhole-name "manhole-12"))
+	(chemical
+		[Ergasia_Class35]
+		[Ergasia_Class36]
+		[Ergasia_Class43])
+	(connected_with [Ergasia_Class10018])
+	(name "Storage_4")
+	(store_ID "4"))
 
-([Ergasia_Class13] of  Manhole
+([Ergasia_Class10007] of  Store
 
-	(connected-with
-		[Ergasia_Class8]
-		[Ergasia_Class11])
-	(manhole-name "manhole-13"))
+	(chemical
+		[Ergasia_Class40]
+		[Ergasia_Class32]
+		[Ergasia_Class43])
+	(connected_with [Ergasia_Class10019])
+	(name "Storage_5")
+	(store_ID "5"))
 
-([Ergasia_Class19] of  Storage
+([Ergasia_Class10008] of  Store
 
-	(connected-to-manhole [Ergasia_Class1])
-	(contains
-		[Ergasia_Class43]
+	(chemical
+		[Ergasia_Class44]
+		[Ergasia_Class41]
+		[Ergasia_Class36])
+	(connected_with [Ergasia_Class10020])
+	(name "Storage_6")
+	(store_ID "6"))
+
+([Ergasia_Class10009] of  Store
+
+	(chemical
+		[Ergasia_Class34]
 		[Ergasia_Class32])
-	(storage-name "store-1"))
+	(connected_with [Ergasia_Class10021])
+	(name "Storage_7")
+	(store_ID "7"))
 
-([Ergasia_Class2] of  Manhole
+([Ergasia_Class10010] of  Store
 
-	(connected-with [Ergasia_Class9])
-	(manhole-name "manhole-2"))
+	(chemical
+		[Ergasia_Class35]
+		[Ergasia_Class36]
+		[Ergasia_Class39])
+	(connected_with [Ergasia_Class10022])
+	(name "Storage_8")
+	(store_ID "8"))
 
-([Ergasia_Class3] of  Manhole
+([Ergasia_Class10015] of  Manhole
 
-	(connected-with [Ergasia_Class9])
-	(manhole-name "manhole-3"))
+	(connected_with
+		[Ergasia_Class10003]
+		[Ergasia_Class10023])
+	(manhole_ID 1)
+	(name "Manhole_1"))
+
+([Ergasia_Class10016] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10004]
+		[Ergasia_Class10023])
+	(manhole_ID 2)
+	(name "Manhole_2"))
+
+([Ergasia_Class10017] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10005]
+		[Ergasia_Class10023])
+	(manhole_ID 3)
+	(name "Manhole_3"))
+
+([Ergasia_Class10018] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10006]
+		[Ergasia_Class10024])
+	(manhole_ID 4)
+	(name "Manhole_4"))
+
+([Ergasia_Class10019] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10007]
+		[Ergasia_Class10024])
+	(manhole_ID 5)
+	(name "Manhole_5"))
+
+([Ergasia_Class10020] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10008]
+		[Ergasia_Class10025])
+	(manhole_ID 6)
+	(name "Manhole_6"))
+
+([Ergasia_Class10021] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10009]
+		[Ergasia_Class10025])
+	(manhole_ID 7)
+	(name "Manhole_7"))
+
+([Ergasia_Class10022] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10010]
+		[Ergasia_Class10027])
+	(manhole_ID 8)
+	(name "Manhole_8"))
+
+([Ergasia_Class10023] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10015]
+		[Ergasia_Class10016]
+		[Ergasia_Class10017]
+		[Ergasia_Class10026])
+	(manhole_ID 9)
+	(name "Manhole_9"))
+
+([Ergasia_Class10024] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10018]
+		[Ergasia_Class10019]
+		[Ergasia_Class10026])
+	(manhole_ID 10)
+	(name "Manhole_10"))
+
+([Ergasia_Class10025] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10020]
+		[Ergasia_Class10021]
+		[Ergasia_Class10027])
+	(manhole_ID 11)
+	(name "Manhole_11"))
+
+([Ergasia_Class10026] of  Manhole
+
+	(connected_with
+		[Ergasia_Class10024]
+		[Ergasia_Class10023])
+	(manhole_ID 12)
+	(name "Manhole_12"))
+
+([Ergasia_Class10027] of  Manhole
+
+	(connected_with [Ergasia_Class10025])
+	(manhole_ID 13)
+	(name "Manhole_13"))
+
+([Ergasia_Class10032] of  ControlSystem
+
+	(connected_with
+		[Ergasia_Class10026]
+		[Ergasia_Class10027])
+	(name "Main Control System"))
 
 ([Ergasia_Class32] of  StrongAcid
 
 	(causes_burn_skin TRUE)
+	(danger_smell FALSE)
 	(distinguished_by S)
+	(has_color FALSE)
+	(has_smell FALSE)
 	(is_corrosive TRUE)
+	(is_radioactive FALSE)
 	(name "Sulphuric acid")
 	(pH 0.5)
 	(soluble_in_water TRUE)
 	(specific_gravity 1.84)
-	(substance_ID 1)
 	(symbolism "H2SO4"))
 
 ([Ergasia_Class34] of  StrongAcid
 
 	(causes_burn_skin TRUE)
 	(danger_smell TRUE)
+	(has_color FALSE)
+	(has_smell TRUE)
 	(is_corrosive TRUE)
 	(is_radioactive FALSE)
 	(name "Hydrochloric acid")
 	(pH 1.5)
 	(soluble_in_water TRUE)
 	(specific_gravity 1.19)
-	(substance_ID 2)
 	(symbolism "HCl"))
 
 ([Ergasia_Class35] of  WeakAcid
 
+	(causes_burn_skin FALSE)
+	(danger_smell FALSE)
+	(has_color FALSE)
+	(has_smell TRUE)
+	(is_corrosive FALSE)
+	(is_radioactive FALSE)
 	(name "Acetic acid")
 	(pH 4.76)
+	(soluble_in_water FALSE)
 	(specific_gravity 1.014)
-	(substance_ID 3)
 	(symbolism "CH3COOH"))
 
 ([Ergasia_Class36] of  WeakAcid
 
+	(causes_burn_skin FALSE)
+	(danger_smell FALSE)
 	(distinguished_by C)
+	(has_color FALSE)
+	(has_smell FALSE)
+	(is_corrosive FALSE)
+	(is_radioactive FALSE)
 	(name "Carbonic acid")
 	(pH 4.18)
 	(soluble_in_water TRUE)
 	(specific_gravity 1.0)
-	(substance_ID 4)
 	(symbolism "H2CO3"))
 
 ([Ergasia_Class39] of  StrongBase
 
+	(danger_smell FALSE)
+	(has_color FALSE)
+	(has_smell FALSE)
 	(is_corrosive TRUE)
+	(is_radioactive FALSE)
 	(name "Sodium hydroxide")
 	(pH 12.0)
 	(soluble_in_water TRUE)
 	(specific_gravity 1.52)
-	(substance_ID 5)
 	(symbolism "NaOH"))
-
-([Ergasia_Class4] of  Manhole
-
-	(connected-with [Ergasia_Class10])
-	(manhole-name "manhole-4"))
 
 ([Ergasia_Class40] of  WeakBase
 
 	(color "red")
+	(danger_smell FALSE)
+	(has_color TRUE)
+	(has_smell FALSE)
+	(is_corrosive FALSE)
+	(is_radioactive FALSE)
 	(name "Chromogen 23")
 	(pH 11.0)
 	(soluble_in_water TRUE)
-	(specific_gravity 1.0)
-	(substance_ID 6))
+	(specific_gravity 1.0))
 
 ([Ergasia_Class41] of  WeakBase
 
 	(color "white")
+	(danger_smell FALSE)
+	(has_color TRUE)
+	(has_smell FALSE)
 	(is_corrosive TRUE)
+	(is_radioactive FALSE)
 	(name "Aluminium hydroxide")
 	(pH 11.0)
 	(soluble_in_water TRUE)
 	(specific_gravity 2.4)
-	(substance_ID 7)
 	(symbolism "Al(OH)3"))
 
 ([Ergasia_Class42] of  WeakBase
 
+	(danger_smell FALSE)
+	(has_color FALSE)
+	(has_smell FALSE)
+	(is_corrosive FALSE)
 	(is_radioactive TRUE)
 	(name "Rubidium hydroxide")
 	(pH 12.2)
 	(soluble_in_water TRUE)
 	(specific_gravity 2.4)
-	(substance_ID 8)
 	(symbolism "RbOH"))
 
 ([Ergasia_Class43] of  Oil
 
 	(contains_toxic_element TRUE)
+	(danger_smell FALSE)
+	(has_color FALSE)
+	(has_smell FALSE)
 	(is_explosive TRUE)
 	(is_radioactive FALSE)
 	(name "Petrol")
 	(pH 6.2)
-	(specific_gravity 0.74)
-	(substance_ID 9))
+	(soluble_in_water FALSE)
+	(specific_gravity 0.74))
 
 ([Ergasia_Class44] of  Oil
 
+	(contains_toxic_element FALSE)
+	(danger_smell FALSE)
+	(has_color FALSE)
+	(has_smell FALSE)
+	(is_explosive FALSE)
+	(is_radioactive FALSE)
 	(name "Transformer oil")
 	(pH 6.0)
-	(specific_gravity 0.89)
-	(substance_ID 10))
-
-([Ergasia_Class5] of  Manhole
-
-	(connected-with [Ergasia_Class10])
-	(manhole-name "manhole-5"))
-
-([Ergasia_Class6] of  Manhole
-
-	(connected-with [Ergasia_Class11])
-	(manhole-name "manhole-6"))
-
-([Ergasia_Class7] of  Manhole
-
-	(connected-with [Ergasia_Class11])
-	(manhole-name "manhole-7"))
-
-([Ergasia_Class8] of  Manhole
-
-	(connected-with [Ergasia_Class13])
-	(manhole-name "manhole-8"))
-
-([Ergasia_Class9] of  Manhole
-
-	(connected-with
-		[Ergasia_Class2]
-		[Ergasia_Class3]
-		[Ergasia_Class12]
-		[Ergasia_Class1])
-	(manhole-name "manhole-9"))
+	(soluble_in_water FALSE)
+	(specific_gravity 0.89))

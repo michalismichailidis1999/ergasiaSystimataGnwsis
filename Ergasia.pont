@@ -1,4 +1,4 @@
-; Sun Nov 14 16:50:38 EET 2021
+; Wed Nov 17 16:23:44 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,219 +7,229 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(multislot inverse_of_connected-to
-		(type INSTANCE)
-;+		(allowed-classes Storage)
-		(create-accessor read-write))
-	(single-slot specific_gravity
-		(type FLOAT)
-		(range 0.0 %3FVARIABLE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot color
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot soluble_in_water
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot substance_ID
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot inverse_of_leads-to
-		(type INSTANCE)
-;+		(allowed-classes Manhole)
-		(create-accessor read-write))
-	(single-slot distinguished_by
-		(type SYMBOL)
-		(allowed-values S O H Cl C Na Rb Al)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot storage-name
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot is_corrosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot is_explosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot leads-to
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot manhole-name
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot connected-to
-		(type INSTANCE)
-;+		(allowed-classes Manhole)
-;+		(cardinality 1 1)
-;+		(inverse-slot connected-to)
-		(create-accessor read-write))
-	(multislot inverse_of_inverse_of_connected-to_
-		(type INSTANCE)
-;+		(allowed-classes Manhole)
-;+		(inverse-slot inverse_of_connected-to_)
-		(create-accessor read-write))
-	(multislot contains
-		(type INSTANCE)
-;+		(allowed-classes Chemicals)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot is_radioactive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot inverse_of_connected-to_
-		(type INSTANCE)
-;+		(allowed-classes Storage)
-;+		(inverse-slot inverse_of_inverse_of_connected-to_)
-		(create-accessor read-write))
-	(multislot connected-with
-		(type INSTANCE)
-;+		(allowed-classes Manhole Storage)
-;+		(inverse-slot connected-with)
-		(create-accessor read-write))
-	(single-slot causes_burn_skin
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot danger_smell
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot symbolism
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot contains_toxic_element
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot pH
+;+		(comment "ph of the chemical\nlowest possible value is 0.0 and highest 14.0")
 		(type FLOAT)
 		(range 0.0 14.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot connected-to-manhole
+	(single-slot is_explosive
+;+		(comment "Boolean value which indicates if an oil is explosive or not")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot name_
+;+		(comment "Name of the chemical")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot manhole_ID
+;+		(comment "ID of the manhole")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot contains_toxic_element
+;+		(comment "Boolean value which indicates that an oil contains toxic element")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot chemical
 		(type INSTANCE)
-;+		(allowed-classes Manhole)
+;+		(allowed-classes Chemicals)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot symbolism
+;+		(comment "Symbolism of a substance\nFor example symbolism of water is H20")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot color
+;+		(comment "String value which indicates what color the specific chemical is")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot distinguished_by
+;+		(comment "Symbol which indicates from what element a chemical is distiguished by.\nAll the possible values exist in a symbolism of a chemical")
+		(type SYMBOL)
+		(allowed-values S O H Cl C Na Rb Al)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot store_ID
+;+		(comment "ID of the storage")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot danger_smell
+;+		(comment "Boolean value which indicates that a chemical contains danger smells")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_corrosive
+;+		(comment "Boolean value which indicates if a chemical is corrosive or not and applies only in acids and bases.")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_radioactive
+;+		(comment "Boolean value which indicates if a chemical is radioactive or not")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot specific_gravity
+;+		(comment "The specific gravity of a chemical")
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot causes_burn_skin
+;+		(comment "Boolean value which indicates if an acid causes skin burn or not")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot has_color
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot soluble_in_water
+;+		(comment "Boolean value which indicates if a chemical is soluble in water")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot connected_with
+		(type INSTANCE)
+;+		(allowed-classes Manhole Store)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot has_smell
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Chemicals
 	(is-a USER)
 	(role abstract)
-	(single-slot is_radioactive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot color
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot danger_smell
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot symbolism
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot specific_gravity
+;+		(comment "The specific gravity of a chemical")
 		(type FLOAT)
 		(range 0.0 %3FVARIABLE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot soluble_in_water
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot distinguished_by
+;+		(comment "Symbol which indicates from what element a chemical is distiguished by.\nAll the possible values exist in a symbolism of a chemical")
 		(type SYMBOL)
 		(allowed-values S O H Cl C Na Rb Al)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot pH
+;+		(comment "ph of the chemical\nlowest possible value is 0.0 and highest 14.0")
 		(type FLOAT)
 		(range 0.0 14.0)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot substance_ID
-		(type INTEGER)
+	(single-slot is_radioactive
+;+		(comment "Boolean value which indicates if a chemical is radioactive or not")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot name_
+;+		(comment "Name of the chemical")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot has_color
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot symbolism
+;+		(comment "Symbolism of a substance\nFor example symbolism of water is H20")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot soluble_in_water
+;+		(comment "Boolean value which indicates if a chemical is soluble in water")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot color
+;+		(comment "String value which indicates what color the specific chemical is")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot danger_smell
+;+		(comment "Boolean value which indicates that a chemical contains danger smells")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot has_smell
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Oil
 	(is-a Chemicals)
 	(role concrete)
-	(single-slot contains_toxic_element
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+	(single-slot pH
+;+		(comment "ph of the chemical\nlowest possible value is 0.0 and highest 14.0")
+		(type FLOAT)
+		(range 6.0 7.99)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot is_explosive
+;+		(comment "Boolean value which indicates if an oil is explosive or not")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot pH
-		(type FLOAT)
-		(range 6.0 7.99)
+	(single-slot contains_toxic_element
+;+		(comment "Boolean value which indicates that an oil contains toxic element")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Acid
 	(is-a Chemicals)
 	(role abstract)
-	(single-slot is_corrosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot causes_burn_skin
+;+		(comment "Boolean value which indicates if an acid causes skin burn or not")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot soluble_in_water
+;+		(comment "Boolean value which indicates if a chemical is soluble in water")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_corrosive
+;+		(comment "Boolean value which indicates if a chemical is corrosive or not and applies only in acids and bases.")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass WeakAcid
 	(is-a Acid)
 	(role concrete)
 	(single-slot pH
+;+		(comment "ph of the chemical\nlowest possible value is 0.0 and highest 14.0")
 		(type FLOAT)
 		(range 3.0 5.99)
 ;+		(cardinality 1 1)
@@ -229,6 +239,7 @@
 	(is-a Acid)
 	(role concrete)
 	(single-slot pH
+;+		(comment "ph of the chemical\nlowest possible value is 0.0 and highest 14.0")
 		(type FLOAT)
 		(range 0.0 2.99)
 ;+		(cardinality 1 1)
@@ -237,22 +248,25 @@
 (defclass Base
 	(is-a Chemicals)
 	(role abstract)
-	(single-slot is_corrosive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot soluble_in_water
+;+		(comment "Boolean value which indicates if a chemical is soluble in water")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot is_corrosive
+;+		(comment "Boolean value which indicates if a chemical is corrosive or not and applies only in acids and bases.")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass StrongBase
 	(is-a Base)
 	(role concrete)
 	(single-slot pH
+;+		(comment "ph of the chemical\nlowest possible value is 0.0 and highest 14.0")
 		(type FLOAT)
 		(range 11.0 14.0)
 ;+		(cardinality 1 1)
@@ -262,32 +276,43 @@
 	(is-a Base)
 	(role concrete))
 
-(defclass Storage
+(defclass SewerSystemPart
 	(is-a USER)
-	(role concrete)
-	(multislot contains
+	(role abstract)
+	(multislot connected_with
 		(type INSTANCE)
-;+		(allowed-classes Chemicals)
+;+		(allowed-classes Manhole Store)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
-	(single-slot storage-name
+	(single-slot name_
+;+		(comment "Name of the chemical")
 		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot connected-to-manhole
-		(type INSTANCE)
-;+		(allowed-classes Manhole)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Manhole
-	(is-a USER)
+(defclass Store
+	(is-a SewerSystemPart)
 	(role concrete)
-	(single-slot manhole-name
+	(single-slot store_ID
+;+		(comment "ID of the storage")
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot connected-with
+	(multislot chemical
 		(type INSTANCE)
-;+		(allowed-classes Manhole Storage)
+;+		(allowed-classes Chemicals)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write)))
+
+(defclass Manhole
+	(is-a SewerSystemPart)
+	(role concrete)
+	(single-slot manhole_ID
+;+		(comment "ID of the manhole")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass ControlSystem
+	(is-a SewerSystemPart)
+	(role concrete))

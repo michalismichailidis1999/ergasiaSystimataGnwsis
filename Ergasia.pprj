@@ -1,4 +1,4 @@
-; Sun Nov 14 16:50:38 EET 2021
+; Wed Nov 17 16:23:44 EET 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,10 +20,17 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Ergasia_ProjectKB_Class88]
-		[Ergasia_ProjectKB_Class89]
-		[Ergasia_ProjectKB_Class90]
-		[Ergasia_ProjectKB_Class91]))
+		[Ergasia_ProjectKB_Class20749]
+		[Ergasia_ProjectKB_Class20750]
+		[Ergasia_ProjectKB_Class20751]
+		[Ergasia_ProjectKB_Class20752]
+		[Ergasia_ProjectKB_Class20753]
+		[Ergasia_ProjectKB_Class20754]
+		[Ergasia_ProjectKB_Class20755]
+		[Ergasia_ProjectKB_Class20756]
+		[Ergasia_ProjectKB_Class20757]
+		[Ergasia_ProjectKB_Class20758]
+		[Ergasia_ProjectKB_Class20759]))
 
 ([CLSES_TAB] of  Widget
 
@@ -41,7 +48,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class2])
-	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
 
 ([Ergasia_ProjectKB_Class10] of  Property_List
 )
@@ -66,13 +73,14 @@
 		[Ergasia_ProjectKB_Class10141]
 		[Ergasia_ProjectKB_Class10143]
 		[Ergasia_ProjectKB_Class10145]
-		[Ergasia_ProjectKB_Class10151]
 		[Ergasia_ProjectKB_Class10184]
 		[Ergasia_ProjectKB_Class10188]
 		[Ergasia_ProjectKB_Class10200]
 		[Ergasia_ProjectKB_Class10204]
 		[Ergasia_ProjectKB_Class10208]
-		[Ergasia_ProjectKB_Class10219]))
+		[Ergasia_ProjectKB_Class10219]
+		[Ergasia_ProjectKB_Class20282]
+		[Ergasia_ProjectKB_Class20396]))
 
 ([Ergasia_ProjectKB_Class10134] of  Property_List
 
@@ -86,8 +94,8 @@
 	(property_list [Ergasia_ProjectKB_Class10136])
 	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
 	(width 100)
-	(x 40)
-	(y 170))
+	(x 10)
+	(y 150))
 
 ([Ergasia_ProjectKB_Class10136] of  Property_List
 )
@@ -100,8 +108,8 @@
 	(property_list [Ergasia_ProjectKB_Class10138])
 	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
 	(width 100)
-	(x 390)
-	(y 100))
+	(x 370)
+	(y 80))
 
 ([Ergasia_ProjectKB_Class10138] of  Property_List
 )
@@ -114,7 +122,7 @@
 	(property_list [Ergasia_ProjectKB_Class10142])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 200)
-	(x 150)
+	(x 10)
 	(y 10))
 
 ([Ergasia_ProjectKB_Class10142] of  Property_List
@@ -128,7 +136,7 @@
 	(property_list [Ergasia_ProjectKB_Class10144])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 200)
-	(x 360)
+	(x 250)
 	(y 10))
 
 ([Ergasia_ProjectKB_Class10144] of  Property_List
@@ -142,8 +150,8 @@
 	(property_list [Ergasia_ProjectKB_Class10146])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 40)
-	(y 230))
+	(x 10)
+	(y 220))
 
 ([Ergasia_ProjectKB_Class10146] of  Property_List
 )
@@ -178,13 +186,14 @@
 		[Ergasia_ProjectKB_Class10169]
 		[Ergasia_ProjectKB_Class10171]
 		[Ergasia_ProjectKB_Class10173]
-		[Ergasia_ProjectKB_Class10177]
 		[Ergasia_ProjectKB_Class10186]
 		[Ergasia_ProjectKB_Class10190]
 		[Ergasia_ProjectKB_Class10202]
 		[Ergasia_ProjectKB_Class10206]
 		[Ergasia_ProjectKB_Class10210]
-		[Ergasia_ProjectKB_Class10221]))
+		[Ergasia_ProjectKB_Class10221]
+		[Ergasia_ProjectKB_Class20284]
+		[Ergasia_ProjectKB_Class20398]))
 
 ([Ergasia_ProjectKB_Class10164] of  Property_List
 
@@ -198,8 +207,8 @@
 	(property_list [Ergasia_ProjectKB_Class10166])
 	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
 	(width 100)
-	(x 30)
-	(y 170))
+	(x 20)
+	(y 150))
 
 ([Ergasia_ProjectKB_Class10166] of  Property_List
 )
@@ -212,8 +221,8 @@
 	(property_list [Ergasia_ProjectKB_Class10168])
 	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
 	(width 100)
-	(x 380)
-	(y 100))
+	(x 400)
+	(y 80))
 
 ([Ergasia_ProjectKB_Class10168] of  Property_List
 )
@@ -226,8 +235,8 @@
 	(property_list [Ergasia_ProjectKB_Class10170])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 200)
-	(x 150)
-	(y 20))
+	(x 20)
+	(y 10))
 
 ([Ergasia_ProjectKB_Class10170] of  Property_List
 )
@@ -240,8 +249,8 @@
 	(property_list [Ergasia_ProjectKB_Class10172])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 200)
-	(x 370)
-	(y 20))
+	(x 260)
+	(y 10))
 
 ([Ergasia_ProjectKB_Class10172] of  Property_List
 )
@@ -254,8 +263,8 @@
 	(property_list [Ergasia_ProjectKB_Class10174])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 30)
-	(y 250))
+	(x 20)
+	(y 230))
 
 ([Ergasia_ProjectKB_Class10174] of  Property_List
 )
@@ -282,8 +291,8 @@
 	(property_list [Ergasia_ProjectKB_Class10185])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 40)
-	(y 290))
+	(x 260)
+	(y 220))
 
 ([Ergasia_ProjectKB_Class10185] of  Property_List
 )
@@ -296,8 +305,8 @@
 	(property_list [Ergasia_ProjectKB_Class10187])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 30)
-	(y 340))
+	(x 180)
+	(y 230))
 
 ([Ergasia_ProjectKB_Class10187] of  Property_List
 )
@@ -310,8 +319,8 @@
 	(property_list [Ergasia_ProjectKB_Class10189])
 	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
 	(width 100)
-	(x 260)
-	(y 100))
+	(x 250)
+	(y 80))
 
 ([Ergasia_ProjectKB_Class10189] of  Property_List
 )
@@ -324,8 +333,8 @@
 	(property_list [Ergasia_ProjectKB_Class10191])
 	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
 	(width 100)
-	(x 250)
-	(y 100))
+	(x 260)
+	(y 80))
 
 ([Ergasia_ProjectKB_Class10191] of  Property_List
 )
@@ -338,8 +347,8 @@
 	(property_list [Ergasia_ProjectKB_Class10201])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 290)
-	(y 290))
+	(x 380)
+	(y 150))
 
 ([Ergasia_ProjectKB_Class10201] of  Property_List
 )
@@ -352,8 +361,8 @@
 	(property_list [Ergasia_ProjectKB_Class10203])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 260)
-	(y 340))
+	(x 400)
+	(y 150))
 
 ([Ergasia_ProjectKB_Class10203] of  Property_List
 )
@@ -366,8 +375,8 @@
 	(property_list [Ergasia_ProjectKB_Class10205])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 200)
-	(x 40)
-	(y 100))
+	(x 10)
+	(y 80))
 
 ([Ergasia_ProjectKB_Class10205] of  Property_List
 )
@@ -380,8 +389,8 @@
 	(property_list [Ergasia_ProjectKB_Class10207])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 200)
-	(x 30)
-	(y 100))
+	(x 20)
+	(y 80))
 
 ([Ergasia_ProjectKB_Class10207] of  Property_List
 )
@@ -394,8 +403,8 @@
 	(property_list [Ergasia_ProjectKB_Class10209])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 290)
-	(y 230))
+	(x 150)
+	(y 150))
 
 ([Ergasia_ProjectKB_Class10209] of  Property_List
 )
@@ -408,8 +417,8 @@
 	(property_list [Ergasia_ProjectKB_Class10211])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 260)
-	(y 250))
+	(x 180)
+	(y 150))
 
 ([Ergasia_ProjectKB_Class10211] of  Property_List
 )
@@ -422,8 +431,8 @@
 	(property_list [Ergasia_ProjectKB_Class10220])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 40)
-	(y 370))
+	(x 10)
+	(y 300))
 
 ([Ergasia_ProjectKB_Class10220] of  Property_List
 )
@@ -436,8 +445,8 @@
 	(property_list [Ergasia_ProjectKB_Class10222])
 	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
 	(width 200)
-	(x 30)
-	(y 420))
+	(x 20)
+	(y 310))
 
 ([Ergasia_ProjectKB_Class10222] of  Property_List
 )
@@ -446,7 +455,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class12])
-	(widget_class_name "ezpal.EZPalTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
 
 ([Ergasia_ProjectKB_Class12] of  Property_List
 )
@@ -464,7 +473,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class16])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
 
 ([Ergasia_ProjectKB_Class16] of  Property_List
 )
@@ -473,7 +482,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class18])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
 
 ([Ergasia_ProjectKB_Class18] of  Property_List
 )
@@ -482,7 +491,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
 
 ([Ergasia_ProjectKB_Class2] of  Property_List
 )
@@ -490,11 +499,699 @@
 ([Ergasia_ProjectKB_Class20] of  Property_List
 )
 
+([Ergasia_ProjectKB_Class20155] of  Widget
+
+	(is_hidden FALSE)
+	(name "Manhole")
+	(property_list [Ergasia_ProjectKB_Class20156])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([Ergasia_ProjectKB_Class20156] of  Property_List
+
+	(properties
+		[Ergasia_ProjectKB_Class20157]
+		[Ergasia_ProjectKB_Class20158]
+		[Ergasia_ProjectKB_Class20451]
+		[Ergasia_ProjectKB_Class20583]))
+
+([Ergasia_ProjectKB_Class20157] of  Property_List
+
+	(name "layout properties"))
+
+([Ergasia_ProjectKB_Class20158] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "manhole_ID")
+	(property_list [Ergasia_ProjectKB_Class20159])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 0)
+	(y 0))
+
+([Ergasia_ProjectKB_Class20159] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20192] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "substance_ID")
+	(property_list [Ergasia_ProjectKB_Class20193])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 400)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20193] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20194] of  Widget
+
+	(is_hidden FALSE)
+	(name "Oil")
+	(property_list [Ergasia_ProjectKB_Class20195])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([Ergasia_ProjectKB_Class20195] of  Property_List
+
+	(properties
+		[Ergasia_ProjectKB_Class20196]
+		[Ergasia_ProjectKB_Class20197]
+		[Ergasia_ProjectKB_Class20199]
+		[Ergasia_ProjectKB_Class20201]
+		[Ergasia_ProjectKB_Class20203]
+		[Ergasia_ProjectKB_Class20205]
+		[Ergasia_ProjectKB_Class20207]
+		[Ergasia_ProjectKB_Class20209]
+		[Ergasia_ProjectKB_Class20211]
+		[Ergasia_ProjectKB_Class20213]
+		[Ergasia_ProjectKB_Class20215]
+		[Ergasia_ProjectKB_Class20217]
+		[Ergasia_ProjectKB_Class20288]
+		[Ergasia_ProjectKB_Class20402]))
+
+([Ergasia_ProjectKB_Class20196] of  Property_List
+
+	(name "layout properties"))
+
+([Ergasia_ProjectKB_Class20197] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "specific_gravity")
+	(property_list [Ergasia_ProjectKB_Class20198])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 230)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20198] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20199] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "pH")
+	(property_list [Ergasia_ProjectKB_Class20200])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 230)
+	(y 0))
+
+([Ergasia_ProjectKB_Class20200] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20201] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "is_explosive")
+	(property_list [Ergasia_ProjectKB_Class20202])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 230)
+	(y 190))
+
+([Ergasia_ProjectKB_Class20202] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20203] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [Ergasia_ProjectKB_Class20204])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20204] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20205] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "symbolism")
+	(property_list [Ergasia_ProjectKB_Class20206])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([Ergasia_ProjectKB_Class20206] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20207] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "soluble_in_water")
+	(property_list [Ergasia_ProjectKB_Class20208])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 350)
+	(y 10))
+
+([Ergasia_ProjectKB_Class20208] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20209] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "color")
+	(property_list [Ergasia_ProjectKB_Class20210])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([Ergasia_ProjectKB_Class20210] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20211] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "distinguished_by")
+	(property_list [Ergasia_ProjectKB_Class20212])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 230)
+	(y 130))
+
+([Ergasia_ProjectKB_Class20212] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20213] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "is_radioactive")
+	(property_list [Ergasia_ProjectKB_Class20214])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 330))
+
+([Ergasia_ProjectKB_Class20214] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20215] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "contains_toxic_element")
+	(property_list [Ergasia_ProjectKB_Class20216])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([Ergasia_ProjectKB_Class20216] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20217] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "danger_smell")
+	(property_list [Ergasia_ProjectKB_Class20218])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 230)
+	(y 260))
+
+([Ergasia_ProjectKB_Class20218] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20219] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "substance_ID")
+	(property_list [Ergasia_ProjectKB_Class20220])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 400)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20220] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20282] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_smell")
+	(property_list [Ergasia_ProjectKB_Class20283])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 260)
+	(y 300))
+
+([Ergasia_ProjectKB_Class20283] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20284] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_smell")
+	(property_list [Ergasia_ProjectKB_Class20285])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 230)
+	(y 310))
+
+([Ergasia_ProjectKB_Class20285] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20288] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_smell")
+	(property_list [Ergasia_ProjectKB_Class20289])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 260))
+
+([Ergasia_ProjectKB_Class20289] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20308] of  Widget
+
+	(is_hidden FALSE)
+	(name "WeakBase")
+	(property_list [Ergasia_ProjectKB_Class20309])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([Ergasia_ProjectKB_Class20309] of  Property_List
+
+	(properties
+		[Ergasia_ProjectKB_Class20310]
+		[Ergasia_ProjectKB_Class20311]
+		[Ergasia_ProjectKB_Class20313]
+		[Ergasia_ProjectKB_Class20315]
+		[Ergasia_ProjectKB_Class20317]
+		[Ergasia_ProjectKB_Class20319]
+		[Ergasia_ProjectKB_Class20321]
+		[Ergasia_ProjectKB_Class20323]
+		[Ergasia_ProjectKB_Class20325]
+		[Ergasia_ProjectKB_Class20327]
+		[Ergasia_ProjectKB_Class20329]
+		[Ergasia_ProjectKB_Class20331]
+		[Ergasia_ProjectKB_Class20404]))
+
+([Ergasia_ProjectKB_Class20310] of  Property_List
+
+	(name "layout properties"))
+
+([Ergasia_ProjectKB_Class20311] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "specific_gravity")
+	(property_list [Ergasia_ProjectKB_Class20312])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 240)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20312] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20313] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "distinguished_by")
+	(property_list [Ergasia_ProjectKB_Class20314])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 240)
+	(y 120))
+
+([Ergasia_ProjectKB_Class20314] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20315] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "pH")
+	(property_list [Ergasia_ProjectKB_Class20316])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 240)
+	(y 0))
+
+([Ergasia_ProjectKB_Class20316] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20317] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "is_radioactive")
+	(property_list [Ergasia_ProjectKB_Class20318])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 250))
+
+([Ergasia_ProjectKB_Class20318] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20319] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [Ergasia_ProjectKB_Class20320])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20320] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20321] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "symbolism")
+	(property_list [Ergasia_ProjectKB_Class20322])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([Ergasia_ProjectKB_Class20322] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20323] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "soluble_in_water")
+	(property_list [Ergasia_ProjectKB_Class20324])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 220)
+	(y 320))
+
+([Ergasia_ProjectKB_Class20324] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20325] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "is_corrosive")
+	(property_list [Ergasia_ProjectKB_Class20326])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 220)
+	(y 250))
+
+([Ergasia_ProjectKB_Class20326] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20327] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "color")
+	(property_list [Ergasia_ProjectKB_Class20328])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([Ergasia_ProjectKB_Class20328] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20329] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "danger_smell")
+	(property_list [Ergasia_ProjectKB_Class20330])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([Ergasia_ProjectKB_Class20330] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20331] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_smell")
+	(property_list [Ergasia_ProjectKB_Class20332])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 320))
+
+([Ergasia_ProjectKB_Class20332] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20396] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_color")
+	(property_list [Ergasia_ProjectKB_Class20397])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 10)
+	(y 370))
+
+([Ergasia_ProjectKB_Class20397] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20398] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_color")
+	(property_list [Ergasia_ProjectKB_Class20399])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 20)
+	(y 380))
+
+([Ergasia_ProjectKB_Class20399] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20402] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_color")
+	(property_list [Ergasia_ProjectKB_Class20403])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 350)
+	(y 80))
+
+([Ergasia_ProjectKB_Class20403] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20404] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "has_color")
+	(property_list [Ergasia_ProjectKB_Class20405])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 220)
+	(y 180))
+
+([Ergasia_ProjectKB_Class20405] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20433] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "connected_with")
+	(property_list [Ergasia_ProjectKB_Class20434])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([Ergasia_ProjectKB_Class20434] of  Property_List
+
+	(properties
+		[Ergasia_ProjectKB_Class20435]
+		[Ergasia_ProjectKB_Class20436]))
+
+([Ergasia_ProjectKB_Class20435] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([Ergasia_ProjectKB_Class20436] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([Ergasia_ProjectKB_Class20437] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "connected_with")
+	(property_list [Ergasia_ProjectKB_Class20438])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([Ergasia_ProjectKB_Class20438] of  Property_List
+
+	(properties
+		[Ergasia_ProjectKB_Class20439]
+		[Ergasia_ProjectKB_Class20440]))
+
+([Ergasia_ProjectKB_Class20439] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([Ergasia_ProjectKB_Class20440] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([Ergasia_ProjectKB_Class20451] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "connected_with")
+	(property_list [Ergasia_ProjectKB_Class20452])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 70))
+
+([Ergasia_ProjectKB_Class20452] of  Property_List
+
+	(properties
+		[Ergasia_ProjectKB_Class20453]
+		[Ergasia_ProjectKB_Class20454]))
+
+([Ergasia_ProjectKB_Class20453] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([Ergasia_ProjectKB_Class20454] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([Ergasia_ProjectKB_Class20465] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [Ergasia_ProjectKB_Class20466])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([Ergasia_ProjectKB_Class20466] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20583] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "name")
+	(property_list [Ergasia_ProjectKB_Class20584])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 200))
+
+([Ergasia_ProjectKB_Class20584] of  Property_List
+)
+
+([Ergasia_ProjectKB_Class20749] of  String
+
+	(name "Manhole")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20750] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([Ergasia_ProjectKB_Class20751] of  String
+
+	(name "Store")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20752] of  String
+
+	(name "StrongAcid")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20753] of  String
+
+	(name "WeakBase")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20754] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([Ergasia_ProjectKB_Class20755] of  String
+
+	(name "StrongBase")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20756] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([Ergasia_ProjectKB_Class20757] of  String
+
+	(name "WeakAcid")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20758] of  String
+
+	(name "Oil")
+	(string_value "name"))
+
+([Ergasia_ProjectKB_Class20759] of  String
+
+	(name "ControlSystem")
+	(string_value "name"))
+
 ([Ergasia_ProjectKB_Class21] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class22])
-	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
 
 ([Ergasia_ProjectKB_Class22] of  Property_List
 )
@@ -503,7 +1200,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class24])
-	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
 
 ([Ergasia_ProjectKB_Class24] of  Property_List
 )
@@ -512,7 +1209,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class26])
-	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
 
 ([Ergasia_ProjectKB_Class26] of  Property_List
 )
@@ -521,7 +1218,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class28])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
 ([Ergasia_ProjectKB_Class28] of  Property_List
 )
@@ -530,13 +1227,13 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class30])
-	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
 
 ([Ergasia_ProjectKB_Class3] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class4])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
 
 ([Ergasia_ProjectKB_Class30] of  Property_List
 )
@@ -545,7 +1242,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class32])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
 
 ([Ergasia_ProjectKB_Class32] of  Property_List
 )
@@ -563,7 +1260,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class36])
-	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
 
 ([Ergasia_ProjectKB_Class36] of  Property_List
 )
@@ -572,7 +1269,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class38])
-	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([Ergasia_ProjectKB_Class38] of  Property_List
 )
@@ -581,7 +1278,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class40])
-	(widget_class_name "TGViztab.TGVizTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
 
 ([Ergasia_ProjectKB_Class4] of  Property_List
 )
@@ -593,7 +1290,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class42])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
 
 ([Ergasia_ProjectKB_Class42] of  Property_List
 )
@@ -602,7 +1299,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class44])
-	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+	(widget_class_name "TGViztab.TGVizTab"))
 
 ([Ergasia_ProjectKB_Class44] of  Property_List
 )
@@ -611,7 +1308,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class46])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
 
 ([Ergasia_ProjectKB_Class46] of  Property_List
 )
@@ -620,7 +1317,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class48])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
 
 ([Ergasia_ProjectKB_Class48] of  Property_List
 )
@@ -629,13 +1326,13 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class50])
-	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([Ergasia_ProjectKB_Class5] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class6])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
 
 ([Ergasia_ProjectKB_Class50] of  Property_List
 )
@@ -644,7 +1341,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class52])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
 
 ([Ergasia_ProjectKB_Class52] of  Property_List
 )
@@ -653,7 +1350,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class54])
-	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
 
 ([Ergasia_ProjectKB_Class54] of  Property_List
 )
@@ -662,7 +1359,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class56])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
 
 ([Ergasia_ProjectKB_Class56] of  Property_List
 )
@@ -671,7 +1368,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class58])
-	(widget_class_name "script.ProtegeScriptTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
 
 ([Ergasia_ProjectKB_Class58] of  Property_List
 )
@@ -680,7 +1377,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class60])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
 
 ([Ergasia_ProjectKB_Class6] of  Property_List
 )
@@ -692,7 +1389,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class62])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
 
 ([Ergasia_ProjectKB_Class62] of  Property_List
 )
@@ -701,7 +1398,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class64])
-	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+	(widget_class_name "script.ProtegeScriptTab"))
 
 ([Ergasia_ProjectKB_Class64] of  Property_List
 )
@@ -710,7 +1407,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class66])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
 
 ([Ergasia_ProjectKB_Class66] of  Property_List
 )
@@ -719,7 +1416,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class68])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
 
 ([Ergasia_ProjectKB_Class68] of  Property_List
 )
@@ -728,13 +1425,13 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class70])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
 ([Ergasia_ProjectKB_Class7] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class8])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
 
 ([Ergasia_ProjectKB_Class70] of  Property_List
 )
@@ -743,7 +1440,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class72])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
 
 ([Ergasia_ProjectKB_Class72] of  Property_List
 )
@@ -752,7 +1449,7 @@
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class74])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+	(widget_class_name "ezpal.EZPalTab"))
 
 ([Ergasia_ProjectKB_Class74] of  Property_List
 )
@@ -760,31 +1457,11 @@
 ([Ergasia_ProjectKB_Class8] of  Property_List
 )
 
-([Ergasia_ProjectKB_Class88] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([Ergasia_ProjectKB_Class89] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
 ([Ergasia_ProjectKB_Class9] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [Ergasia_ProjectKB_Class10])
-	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
-
-([Ergasia_ProjectKB_Class90] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([Ergasia_ProjectKB_Class91] of  String
-
-	(name "StrongAcid")
-	(string_value "name"))
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
 
 ([FORMS_TAB] of  Widget
 
@@ -913,7 +1590,7 @@
 	(name "classes_file_name")
 	(string_value "Ergasia.pont"))
 
-([KB_692593_Class0] of  Map
+([KB_629479_Class0] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -998,13 +1675,16 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[Ergasia_ProjectKB_Class20155]
+		[STANDARD_CLASS_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[Ergasia_ProjectKB_Class10132]
+		[Ergasia_ProjectKB_Class20308]
 		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
-		[Ergasia_ProjectKB_Class10132]
-		[STANDARD_CLASS_FORM_WIDGET]
-		[Ergasia_ProjectKB_Class10162])
+		[Ergasia_ProjectKB_Class10162]
+		[Ergasia_ProjectKB_Class20194])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
